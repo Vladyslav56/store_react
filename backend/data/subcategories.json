@@ -1,0 +1,57 @@
+[
+	{
+		"id": 1,
+		"name": "Свиньи",
+		"category_id": 1
+	},
+	{
+		"id": 2,
+		"name": "Несушки",
+		"category_id": 1
+	},
+	{
+		"id": 3,
+		"name": "Бройлеры",
+		"category_id": 1
+	},
+	{
+		"id": 4,
+		"name": "КРС",
+		"category_id": 1
+	},
+	{
+		"id": 5,
+		"name": "Утки и гуси",
+		"category_id": 1
+	},
+	{
+		"id": 6,
+		"name": "Индюки",
+		"category_id": 1
+	},
+	{
+		"id": 7,
+		"name": "Кролики",
+		"category_id": 1
+	},
+	{
+		"id": 8,
+		"name": "Корма для питомцев",
+		"category_id": 4
+	},
+	{
+		"id": 9,
+		"name": "Аксесуары",
+		"category_id": 4
+	},
+	{
+		"id": 10,
+		"name": "Сельхоз животные",
+		"category_id": 5
+	},
+	{
+		"id": 11,
+		"name": "Домашние животные",
+		"category_id": 5
+	}
+]

@@ -1,0 +1,149 @@
+.page {
+	width: 75%;
+	padding: 8rem;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 3rem;
+	border-radius: 20px;
+	background-color: #f5f5f5;
+	box-shadow: 0 0 1.5rem rgb(0, 0, 0, 0.5);
+}
+
+.title {
+	text-align: start;
+	font-size: 25px;
+}
+
+.label {
+	display: block;
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.input {
+	width: 100%;
+	border-radius: 7px;
+	height: 2rem;
+	padding: 0 0.5rem;
+}
+
+.name {
+	display: flex;
+	justify-content: space-between;
+}
+
+.name div {
+	width: 45%;
+}
+
+.tel {
+	position: relative;
+	width: 100%;
+}
+
+.number {
+	padding-left: 2rem;
+}
+
+.start {
+	position: absolute;
+	left: 0.3rem;
+	top: 2.5rem;
+}
+
+.check {
+	position: absolute;
+	opacity: 0;
+}
+
+.custom {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	padding-left: 2rem;
+}
+
+.custom::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.check:checked + .icon-check {
+	opacity: 1;
+}
+
+.icon-check {
+	position: absolute;
+	opacity: 0;
+	left: 1px;
+	top: 1px;
+	width: 1rem;
+	height: 1rem;
+}
+
+.error {
+	display: block;
+	color: red;
+	margin-top: 1rem;
+}
+
+.border {
+	border: 1px solid red;
+}
+
+.success p {
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.icon-success {
+	display: block;
+	margin: auto;
+	width: 10rem;
+	margin-bottom: 2rem;
+}
+
+.link {
+	display: block;
+	margin-top: 3rem;
+}
+
+.link button {
+	display: block;
+	margin: auto;
+}
+
+@media (max-width: 1024px) {
+	.page {
+		padding: 3rem 2rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.name {
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+	.name div {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.page {
+		width: 100%;
+	}
+}
