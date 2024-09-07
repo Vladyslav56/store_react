@@ -1,5 +1,5 @@
 import styles from "../../styles/Products.module.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import { addToCart } from "../../futures/cartSlice"
@@ -14,6 +14,10 @@ export default function Products({
 	const { productsList, isLoading } = useSelector(({ products }) => products)
 	const [currentPage, setCurrentPage] = useState(1)
 	const productsPerPage = 12
+
+	useEffect(() => {
+		setCurrentPage(1)
+	}, [categoryID, subcategoryID])
 
 	const filteredProducts = subcategoryID
 		? productsList.filter((product) => product.subcategory === subcategoryID)
